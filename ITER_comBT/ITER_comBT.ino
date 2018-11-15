@@ -3,7 +3,7 @@
 void setup()
 {
 // Add your initialization code here
-// Test sans commit
+// Test sans
 	//PC connexion
 	Serial.begin(9600);
 	Serial.println("Ecoute du module BT");
