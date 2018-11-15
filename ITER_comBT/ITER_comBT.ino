@@ -17,10 +17,12 @@ void setup()
 void loop()
 {
 //Add your repeated code here
+	// Ecoute du module BT
 	if(Serial1.available())
-		Serial.write(Serial1.read());
+		Serial.write(Serial1.read()); //Ecrire le caractère sur le port série du PC
 
+	// Ecoute du port série du PC
 	if(Serial.available())
-		Serial1.write(Serial.read());
+		Serial1.write(Serial.read()); //Ecrire le caractère reçu sur le module BT
 
 }
